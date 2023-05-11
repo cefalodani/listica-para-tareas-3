@@ -50,8 +50,8 @@ function agregarContacto(nombre, telefono) {
 // Funcion para editar un contacto de la lista
 function editarContacto(indice) {
   const contacto = contactos[indice];
-  const nuevoNombre = prompt('Ingrese el nuevo nombre:', contacto.nombre);
-  const nuevoTelefono = prompt('Ingrese el nuevo telefono:', contacto.telefono);
+  const nuevoNombre = prompt('Ingrese la nueva tarea:', contacto.nombre);
+  const nuevoTelefono = prompt('Ingrese la nueva fecha:', contacto.telefono);
 
   if (nuevoNombre !== null && nuevoTelefono !== null) {
     contactos[indice] = { nombre: nuevoNombre, telefono: nuevoTelefono };
@@ -73,7 +73,7 @@ function validarFormulario() {
   const telefono = telefonoInput.value.trim();
    // Validamos que se hayan ingresado los datos requeridos
    if (nombre === '' || telefono === '') {
-    alert('Debe ingresar el nombre y el telefono del contacto');
+    alert('Debe ingresar la tarea y la nueva fecha');
     return false;
   }
 
