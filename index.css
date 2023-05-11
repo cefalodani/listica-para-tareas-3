@@ -79,14 +79,14 @@ body{
   button{
   background-color: #82c79c;
       border: none;
-      color: #fff;
+      color: black;
       padding: 5px;
       border-radius: 3px;
       font-size: 15px;
       margin: 6px;
   }
   button:hover {
-    background-color: #0062cc;
+    background-color: rgb(255, 255, 255);
   }
 
   label {
@@ -96,4 +96,16 @@ body{
 
   li{
     color: white;
+  }
+
+  .editIcon {
+    width: 0.8rem;
+    height: 0.8rem;
+    color: aqua;
+  }
+
+  .editCheck {
+    width: 0.8rem;
+    height: 0.8rem;
+    color:red ;
   }
